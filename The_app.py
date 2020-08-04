@@ -1,42 +1,18 @@
-import tkinter as tk
-import tkinter.messagebox
-import os
-import datetime
-import wikipedia
-def new_windows():
-	
+from kivy.app  import App
+from kivy.uix.scatter import Scatter
+from kivy.uix.label import Label
+from kivy.uix.floatlayout import FloatLayout
 
-root = tk.Tk()
+class The_app(App):
+    def build(self):
+        f = FloatLayout()
+        s = Scatter()
+        l = Label(text="Hello kivy", font_size='20')
+        sol = Label(text="Helo world")
+        f.add_widget(s)
+        s.add_widget(l)
+        return f
 
-label = tk.Label(text="learn pc")
-label.pack()
 
-
-
-
-root.geometry('2000x2000')
-
-root.mainloop()
-#
-##
-###
-####
-#######
-##########
-################
-#####################
-########################
-##############################
-#################################
-########################################
-##############################################
-####################################
-###############################
-#######################
-###############
-#########
-######
-####
-###
-##
-#
+if __name__ == "__main__":
+    The_app().run()
