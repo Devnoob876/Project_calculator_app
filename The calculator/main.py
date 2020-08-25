@@ -22,12 +22,19 @@ class Mainscene(Screen):
 
 
 class MyBox(GridLayout, Widget):
+
 	def calculation(self, calculat):
+
 		if calculat:
 			try:
 				self.display.text = str(eval(calculat))
 			except Exception:
 				self.display.text = "Error"
+	
+
+
+		
+
 
 
 

@@ -1,11 +1,18 @@
+<custom@Button>:
+	font_size: 60
+
+
 <MyBox>:
+
 	
 	id: calculator
 	display: entry
+	
 
 
 	cols:1
 	TextInput:
+
 		id: entry
 		multiline: False
 		font_size: 40
@@ -13,8 +20,11 @@
 		cols: 4
 
 		Button:
+			
 			text: "1"
 			on_release: entry.text += self.text
+
+
 		Button:
 			text: "2"
 			
@@ -88,6 +98,7 @@
 			
 			text: "="
 			on_release: calculator.calculation(entry.text)
+
 
 
 
