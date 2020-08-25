@@ -1,17 +1,25 @@
 from kivy.app  import App
-from kivy.uix.scatter import Scatter
+from kivy.uix.gridlayout import GridLayout
+from kivy.uix.textinput import TextInput
 from kivy.uix.label import Label
-from kivy.uix.floatlayout import FloatLayout
+
+
+
+class Grid(GridLayout):
+	def __init__(self, **kwargs):
+		super(Grid, self).__init__(**kwargs)
+		self.cols = 2
+		self.add_widget(Label(text="lololo"))
+		self.name = TextInput(multiline=False)
+		self.add_widget(self.name)
+		
+
+
+
 
 class The_app(App):
     def build(self):
-        f = FloatLayout()
-        s = Scatter()
-        l = Label(text="Hello kivy", font_size='20')
-        sol = Label(text="Helo world")
-        f.add_widget(s)
-        s.add_widget(l)
-        return f
+    	return Grid()
 
 
 if __name__ == "__main__":
