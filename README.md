@@ -1,8 +1,1 @@
-# This is the project of the learning your pc app 
-## DONT BE LAZY!!!!!!
-  
-  
-   -this is a great project-
-   
-   
-   ###NOthing to say
+This is a project of my learning kivy you can download this file i hope it will help you learning kivy
